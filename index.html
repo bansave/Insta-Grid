@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cursed Image</title>
+    <style>
+        body {margin:0;
+              font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        #profpic{
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            width: 150px;
+            background: darkgrey;
+        }
+        #contentpic{
+            background: white;
+        }
+        #content{   
+            display: grid;   
+            grid-template-columns: 1fr 1fr 1fr;   
+            grid-template-rows: 1fr 1fr 1fr;  
+            grid-column-gap: 40px;   
+            grid-row-gap: 30px;   
+            max-width: 960px;   
+            margin: 0 auto;}
+        div .gallery{
+            border: 1px solid black;
+            background: grey;
+            
+        }
+        div .gallery:hover {
+            border: 1px solid #777;
+        }
+        div .gallery img{
+            width: 320px;
+            height: 300px;
+            border-bottom: 1px solid darkgrey;
+        }
+        div .desc{
+            padding: 15px;
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(135, 166, 201);
+            position: fixed;
+            top:0;
+            width: 100%;
+            border-bottom: 1px solid black;
+        }
+        li {
+            float:left;
+        }
+        li a{
+            display: block;
+            color: silver;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size:17px;
+        }
+        li a:hover:hot(.active){
+            background-color: #111;
+        }
+        .active {
+            background-color: rgb(76, 139, 194);
+        }
+        @media screen and (max-width:600px){
+            .li a:not(:first-child){display:none;}
+            float: right;
+            display: block;
+        }
+        @media screen and (max-width: 600px){
+            .li .responsive {position:relative;}
+            .li .responsive .icon{
+                position: absolute;
+                right:0;
+                top: 0;
+            }
+            .li .responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <a class="active" href="#home">Home</a>
+        </li>
+        <li>
+            <a href="#trending">Trending</a>
+        </li>
+        <li>
+            <a href="#profile">Profile</a>
+        </li>
+        <li>
+            <a href="#setting">Setting</a>
+        </li>
+    </ul>
+    
+    <div style="padding:20px;margin-top:30px;background-color:rgb(93, 150, 201);height:1500px;">
+        <h1>Pholia</h1>
+        <p><img src="pholia-pp.PNG" id="profpic"></p>
+        <p>Sovereign of Idelva</p>
+        <hr>
+        <div id="content">
+        <div class="gallery">
+        <a target="_blank" href="https://gbf.wiki/images/thumb/f/fc/Pholia_NPC.png/720px-Pholia_NPC.png">
+            <img src="https://gbf.wiki/images/thumb/f/fc/Pholia_NPC.png/720px-Pholia_NPC.png" id="contentpic">
+        </a>
+            <div class="desc">Casual Dress</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="https://gbf.wiki/images/thumb/f/f6/Cain_A.png/720px-Cain_A.png">
+                <img src="https://gbf.wiki/images/thumb/f/f6/Cain_A.png/720px-Cain_A.png" id="contentpic">
+            </a>
+            <div class="desc">Cain</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="https://gbf.wiki/images/1/11/Leona_NPC.png">
+                <img src="https://gbf.wiki/images/1/11/Leona_NPC.png" id="contentpic">
+            </a>
+            <div class="desc">Leona</div>
+        
+        </div>
+        <div class="gallery">
+        <a target="_blank" href="https://gbf.wiki/images/thumb/f/fc/Pholia_NPC.png/720px-Pholia_NPC.png">
+            <img src="https://gbf.wiki/images/thumb/f/fc/Pholia_NPC.png/720px-Pholia_NPC.png" id="contentpic">
+        </a>
+            <div class="desc">Casual Dress</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="https://gbf.wiki/images/thumb/f/f6/Cain_A.png/720px-Cain_A.png">
+                <img src="https://gbf.wiki/images/thumb/f/f6/Cain_A.png/720px-Cain_A.png" id="contentpic">
+            </a>
+            <div class="desc">Cain</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="https://gbf.wiki/images/1/11/Leona_NPC.png">
+                <img src="https://gbf.wiki/images/1/11/Leona_NPC.png" id="contentpic">
+            </a>
+            <div class="desc">Leona</div>
+        
+        </div>
+        </div>
+        
+</body>
+</html>
